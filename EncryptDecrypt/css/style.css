@@ -162,6 +162,10 @@ button {
         border-radius: 32px;
 }
 
+.textareaUsuario{
+    width: 680px;
+        height: 288px;
+}
 .imgMuneco{
     /* Muñeco */
     position: absolute;
@@ -177,10 +181,12 @@ button {
         width: 336px;
         height: 304px;
         left: 32px;
-        top: 243px;
+        top: 32px;
 }
 .mostrarTexto{
     background: #FFFFFF;
+    width: 336px;
+    height: 781px;
 }
 .divParrafo{
 
