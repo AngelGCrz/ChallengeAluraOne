@@ -1,0 +1,16 @@
+@media (min-width: 375px) and (max-width: 933px) {
+    .header {
+        position: absolute;
+        width: 375px;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+    }
+
+    .main {
+        position: relative;
+        width: 375px;
+        height: 933px;
+        background: #F3F5FC;
+    }
+}
