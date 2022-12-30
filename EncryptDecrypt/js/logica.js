@@ -11,6 +11,7 @@
 }*/
 
 function encriptar() {
+  document.getElementById("contenidoAside").style.visibility = "hidden";
   // Obtener el texto de la caja de texto
   let texto = document.getElementById("textoUsuario").value;
 
@@ -21,6 +22,7 @@ function encriptar() {
   texto = texto.replace(/o/g, "ober");
   texto = texto.replace(/u/g, "ufat");
 
+  
   // Mostrar el texto encriptado en la caja de texto
   document.getElementById("mostrarTexto").value = texto;
 }
@@ -39,3 +41,11 @@ function desencriptar() {
   // Mostrar el texto desencriptado en la caja de texto
   document.getElementById("mostrarTexto").value = texto;
 }
+
+function ocultarTextAreaAside() {
+  document.getElementById("mostrarTexto").style.visibility = "hidden";
+}
+
+//asiganar funciones a los botones
+document.getElementById("brtEncriptar").addEventListener("click", encriptar); 
+document.getElementById("btnDesencriptar").addEventListener("click", desencriptar);

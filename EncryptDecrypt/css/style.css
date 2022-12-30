@@ -173,6 +173,9 @@ button {
     /*background-image: url("img/muneco.png");*/
 }
 
+.mostrarTexto{
+    background: #FFFFFF;
+}
 .divParrafo{
 
     display: flex;
