@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <script src="js/logica.js"></script>
+    
     <title>Encriptador</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
 
         <article class="article">
             <div class="divTextarea">
-                <textarea name="" id="" cols="30" rows="2" placeholder="INGRESE ALGÚN TEXTO"></textarea>
+                <textarea id="textoUsuario"  placeholder="INGRESE ALGÚN TEXTO"></textarea>
             </div>
             
         </article>
@@ -36,11 +36,14 @@
             <!-------------------------------------------------------------->
             <div class="divBtn">
                 <button class="btnEncriptar" onclick="encriptar()" >Encriptar</button>
-                <button class="btnDesencriptar b2">Desencriptar</button>
+                <button class="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
         </section>
 
         <aside class="aside" id="aside">
+            <div>
+                <textarea id="mostrarTexto" placeholder="mostrar"></textarea>
+            </div>
             <div id="contenidoAside">
                 <div class="imgMuneco">
                     <img src="img/muneco.png" alt="">
@@ -55,6 +58,6 @@
         </aside>
 
     </main>
-    
+    <script src="js/logica.js"></script>
 </body>
 </html>
