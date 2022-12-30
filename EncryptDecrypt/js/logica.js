@@ -9,9 +9,10 @@
         contenidoAside.style.display = 'none'
     }
 }*/
-
+ocultarTextAreaAside()
 function encriptar() {
   document.getElementById("contenidoAside").style.visibility = "hidden";
+  mostrarTextAreaAside();
   // Obtener el texto de la caja de texto
   let texto = document.getElementById("textoUsuario").value;
 
@@ -43,8 +44,13 @@ function desencriptar() {
 }
 
 function ocultarTextAreaAside() {
-  document.getElementById("mostrarTexto").style.visibility = "hidden";
+  document.getElementById("mostrarTexto").hidden = true;
 }
+
+function mostrarTextAreaAside() {
+  document.getElementById("mostrarTexto").hidden = false;
+}
+
 
 //asiganar funciones a los botones
 document.getElementById("brtEncriptar").addEventListener("click", encriptar); 

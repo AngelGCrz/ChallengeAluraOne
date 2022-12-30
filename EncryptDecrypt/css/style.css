@@ -172,7 +172,13 @@ button {
     /*background: black;*/
     /*background-image: url("img/muneco.png");*/
 }
-
+.divMostrarTexto{
+    position: absolute;
+        width: 336px;
+        height: 304px;
+        left: 32px;
+        top: 243px;
+}
 .mostrarTexto{
     background: #FFFFFF;
 }
