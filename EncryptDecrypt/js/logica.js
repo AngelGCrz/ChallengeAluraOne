@@ -13,6 +13,7 @@ ocultarTextAreaAside()
 function encriptar() {
   document.getElementById("contenidoAside").style.visibility = "hidden";
   mostrarTextAreaAside();
+  
   // Obtener el texto de la caja de texto
   let texto = document.getElementById("textoUsuario").value;
 
@@ -41,6 +42,16 @@ function desencriptar() {
 
   // Mostrar el texto desencriptado en la caja de texto
   document.getElementById("mostrarTexto").value = texto;
+
+  document.getElementById("idCopiar").style.display = "block";
+}
+
+function copiar() {
+  // Obtener el texto de la caja de texto
+  let texto = document.getElementById("mostrarTexto").value;
+
+  // Copiar el texto al portapapeles
+  navigator.clipboard.writeText(texto);
 }
 
 function ocultarTextAreaAside() {
@@ -51,7 +62,11 @@ function mostrarTextAreaAside() {
   document.getElementById("mostrarTexto").hidden = false;
 }
 
+function mostrarBtnCopiar() {
+  document.getElementById("btnCopiar").hidden = true;
+}
 
 //asiganar funciones a los botones
 document.getElementById("brtEncriptar").addEventListener("click", encriptar); 
 document.getElementById("btnDesencriptar").addEventListener("click", desencriptar);
+document.getElementById('btnCopiar').addEventListener("click", copiar);
